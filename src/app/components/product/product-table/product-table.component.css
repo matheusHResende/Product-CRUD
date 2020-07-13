@@ -1,0 +1,42 @@
+.table {
+    margin: 30px auto;
+    width: 100%;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inline > p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.number {
+    min-width: 100px;
+}
+
+.text {
+    min-width: 600px;
+}
+
+.name {
+    min-width: 200px;
+}
+
+.icons {
+    min-width: 100px;
+}
+
+i {
+    margin-right: 15px;
+}
+
+i.edit {
+    color: #91a134
+}
+
+i.delete {
+    color: #f36c6c
+}

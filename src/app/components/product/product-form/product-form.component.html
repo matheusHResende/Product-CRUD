@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-title>
+        {{title}}
+    </mat-card-title>
+
+    <form>
+        <span class="line-input">
+            <mat-form-field>
+                <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name" [disabled]="disable">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price" (ngModelChange)="calculateFinalPrice()" [disabled]="disable">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Desconto" [(ngModel)]="product.discount" name="discount" (ngModelChange)="calculateFinalPrice()" [disabled]="disable">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Preço Final(R$)" disabled value="{{ product.finalPrice }}" name="finalPrice">
+            </mat-form-field>
+        </span>
+        <mat-form-field>
+            <textarea matInput placeholder="Descrição" maxlength="500" [(ngModel)]="product.description" name="description" [disabled]="disable"></textarea>
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button color="{{buttoncolor}}" (click)="submitProduct()">
+        {{button}}
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

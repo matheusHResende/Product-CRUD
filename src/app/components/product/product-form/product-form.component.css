@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-input {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+
+    grid-gap: 10px;
+}
+
+button {
+    margin: 10px;
+}

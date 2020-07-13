@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: #e7e8e9;
+    height: 100%;
+
+    box-shadow: 0px 1px 1px;
+}
+
+.container > span{
+    margin-right: 15px;
+    font-size: 1rem;
+    font-weight: 300;
+}
